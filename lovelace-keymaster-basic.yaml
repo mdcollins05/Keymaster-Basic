@@ -148,4 +148,399 @@ views:
                 name: Enabled
               - entity: input_boolean.lock_code_slot_8_notify
                 name: Notify
-  
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 9
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_9_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_9_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_9_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_9_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 10
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_10_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_10_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_10_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_10_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 11
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_11_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_11_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_11_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_11_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 12
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_12_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_12_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_12_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_12_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 13
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_13_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_13_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_13_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_13_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 14
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_14_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_14_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_14_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_14_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 15
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_15_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_15_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_15_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_15_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 16
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_16_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_16_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_16_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_16_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 17
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_17_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_17_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_17_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_17_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 18
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_18_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_18_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_18_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_18_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 19
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_19_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_19_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_19_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_19_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 20
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_20_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_20_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_20_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_20_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 21
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_21_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_21_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_21_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_21_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 22
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_22_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_22_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_22_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_22_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 23
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_23_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_23_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_23_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_23_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 24
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_24_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_24_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_24_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_24_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 25
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_25_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_25_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_25_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_25_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 26
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_26_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_26_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_26_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_26_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 27
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_27_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_27_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_27_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_27_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 28
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_28_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_28_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_28_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_28_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 29
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_29_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_29_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_29_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_29_notify
+                name: Notify
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 30
+            type: markdown
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_text.lock_code_slot_30_name
+                secondary_info: none
+                name: Name
+              - entity: input_text.lock_code_slot_30_pin
+                name: Code
+              - type: divider
+              - entity: input_boolean.lock_code_slot_30_state
+                name: Enabled
+              - entity: input_boolean.lock_code_slot_30_notify
+                name: Notify
