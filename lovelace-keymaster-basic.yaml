@@ -1,3 +1,33 @@
+# Generated with the following Jinja template:
+
+# views:
+#   - title: Keymaster
+#     theme: Backend-selected
+#     path: keymaster
+#     badges: []
+#     cards:
+#       {%- for i in range(1, 3) %}
+#       - type: vertical-stack
+#         cards:
+#           - content: |
+#               ## Code {{ i }}
+#             type: markdown
+#           - type: entities
+#             show_header_toggle: false
+#             entities:
+#               - entity: input_text.lock_code_slot_{{ i }}_name
+#                 secondary_info: none
+#                 name: Name
+#               - entity: input_text.lock_code_slot_{{ i }}_pin
+#                 name: Code
+#               - type: divider
+#               - entity: input_boolean.lock_code_slot_{{ i }}_state
+#                 name: Enabled
+#               - entity: input_boolean.lock_code_slot_{{ i }}_notify
+#                 name: Notify
+#       {%- endfor %}
+
+
 views:
   - title: Keymaster
     theme: Backend-selected

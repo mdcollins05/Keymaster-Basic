@@ -127,30 +127,577 @@ automation:
                     {{ now().strftime('%H:%M') }}
     mode: single
 
-# Needed Variables
+# Generated with the following Jinja template:
+
+# input_boolean:
+# {%- for i in range(1, 3) %}
+#   lock_code_slot_{{ i }}_state:
+#     name: "Lock Code Slot {{ i }} State"
+#     icon: mdi:lock-check
+#   lock_code_slot_{{ i }}_notify:
+#     name: "Lock Code Slot {{ i }} Notify"
+#     icon: mdi:alarm-bell
+# {% endfor %}
+# input_text:
+#   last_lock_unlock_code_slot:
+#     name: Last Used Code Slot
+#     icon: mdi:account
+# {% for i in range(1, 3) %}
+#   lock_code_slot_{{ i }}_pin:
+#     name: "Lock Code Slot {{ i }} PIN"
+#     mode: password
+#     min: 4
+#     max: 10
+#     pattern: "[0-9]*"
+#     icon: mdi:form-textbox-password
+#   lock_code_slot_{{ i }}_name:
+#     name: "Lock Code Slot {{ i }} Name"
+#     icon: mdi:account
+# {% endfor %}
+
 input_boolean:
-{% for i in range(1, 31) %}
-  lock_code_slot_{{ i }}_state:
-    name: "Lock Code Slot {{ i }} State"
+  lock_code_slot_1_state:
+    name: "Lock Code Slot 1 State"
     icon: mdi:lock-check
-  lock_code_slot_{{ i }}_notify:
-    name: "Lock Code Slot {{ i }} Notify"
+  lock_code_slot_1_notify:
+    name: "Lock Code Slot 1 Notify"
     icon: mdi:alarm-bell
-{% endfor %}
+
+  lock_code_slot_2_state:
+    name: "Lock Code Slot 2 State"
+    icon: mdi:lock-check
+  lock_code_slot_2_notify:
+    name: "Lock Code Slot 2 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_3_state:
+    name: "Lock Code Slot 3 State"
+    icon: mdi:lock-check
+  lock_code_slot_3_notify:
+    name: "Lock Code Slot 3 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_4_state:
+    name: "Lock Code Slot 4 State"
+    icon: mdi:lock-check
+  lock_code_slot_4_notify:
+    name: "Lock Code Slot 4 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_5_state:
+    name: "Lock Code Slot 5 State"
+    icon: mdi:lock-check
+  lock_code_slot_5_notify:
+    name: "Lock Code Slot 5 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_6_state:
+    name: "Lock Code Slot 6 State"
+    icon: mdi:lock-check
+  lock_code_slot_6_notify:
+    name: "Lock Code Slot 6 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_7_state:
+    name: "Lock Code Slot 7 State"
+    icon: mdi:lock-check
+  lock_code_slot_7_notify:
+    name: "Lock Code Slot 7 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_8_state:
+    name: "Lock Code Slot 8 State"
+    icon: mdi:lock-check
+  lock_code_slot_8_notify:
+    name: "Lock Code Slot 8 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_9_state:
+    name: "Lock Code Slot 9 State"
+    icon: mdi:lock-check
+  lock_code_slot_9_notify:
+    name: "Lock Code Slot 9 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_10_state:
+    name: "Lock Code Slot 10 State"
+    icon: mdi:lock-check
+  lock_code_slot_10_notify:
+    name: "Lock Code Slot 10 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_11_state:
+    name: "Lock Code Slot 11 State"
+    icon: mdi:lock-check
+  lock_code_slot_11_notify:
+    name: "Lock Code Slot 11 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_12_state:
+    name: "Lock Code Slot 12 State"
+    icon: mdi:lock-check
+  lock_code_slot_12_notify:
+    name: "Lock Code Slot 12 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_13_state:
+    name: "Lock Code Slot 13 State"
+    icon: mdi:lock-check
+  lock_code_slot_13_notify:
+    name: "Lock Code Slot 13 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_14_state:
+    name: "Lock Code Slot 14 State"
+    icon: mdi:lock-check
+  lock_code_slot_14_notify:
+    name: "Lock Code Slot 14 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_15_state:
+    name: "Lock Code Slot 15 State"
+    icon: mdi:lock-check
+  lock_code_slot_15_notify:
+    name: "Lock Code Slot 15 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_16_state:
+    name: "Lock Code Slot 16 State"
+    icon: mdi:lock-check
+  lock_code_slot_16_notify:
+    name: "Lock Code Slot 16 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_17_state:
+    name: "Lock Code Slot 17 State"
+    icon: mdi:lock-check
+  lock_code_slot_17_notify:
+    name: "Lock Code Slot 17 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_18_state:
+    name: "Lock Code Slot 18 State"
+    icon: mdi:lock-check
+  lock_code_slot_18_notify:
+    name: "Lock Code Slot 18 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_19_state:
+    name: "Lock Code Slot 19 State"
+    icon: mdi:lock-check
+  lock_code_slot_19_notify:
+    name: "Lock Code Slot 19 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_20_state:
+    name: "Lock Code Slot 20 State"
+    icon: mdi:lock-check
+  lock_code_slot_20_notify:
+    name: "Lock Code Slot 20 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_21_state:
+    name: "Lock Code Slot 21 State"
+    icon: mdi:lock-check
+  lock_code_slot_21_notify:
+    name: "Lock Code Slot 21 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_22_state:
+    name: "Lock Code Slot 22 State"
+    icon: mdi:lock-check
+  lock_code_slot_22_notify:
+    name: "Lock Code Slot 22 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_23_state:
+    name: "Lock Code Slot 23 State"
+    icon: mdi:lock-check
+  lock_code_slot_23_notify:
+    name: "Lock Code Slot 23 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_24_state:
+    name: "Lock Code Slot 24 State"
+    icon: mdi:lock-check
+  lock_code_slot_24_notify:
+    name: "Lock Code Slot 24 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_25_state:
+    name: "Lock Code Slot 25 State"
+    icon: mdi:lock-check
+  lock_code_slot_25_notify:
+    name: "Lock Code Slot 25 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_26_state:
+    name: "Lock Code Slot 26 State"
+    icon: mdi:lock-check
+  lock_code_slot_26_notify:
+    name: "Lock Code Slot 26 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_27_state:
+    name: "Lock Code Slot 27 State"
+    icon: mdi:lock-check
+  lock_code_slot_27_notify:
+    name: "Lock Code Slot 27 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_28_state:
+    name: "Lock Code Slot 28 State"
+    icon: mdi:lock-check
+  lock_code_slot_28_notify:
+    name: "Lock Code Slot 28 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_29_state:
+    name: "Lock Code Slot 29 State"
+    icon: mdi:lock-check
+  lock_code_slot_29_notify:
+    name: "Lock Code Slot 29 Notify"
+    icon: mdi:alarm-bell
+
+  lock_code_slot_30_state:
+    name: "Lock Code Slot 30 State"
+    icon: mdi:lock-check
+  lock_code_slot_30_notify:
+    name: "Lock Code Slot 30 Notify"
+    icon: mdi:alarm-bell
+
 
 input_text:
   last_lock_unlock_code_slot:
     name: Last Used Code Slot
     icon: mdi:account
-{% for i in range(1, 31) %}
-  lock_code_slot_{{ i }}_pin:
-    name: "Lock Code Slot {{ i }} PIN"
+
+  lock_code_slot_1_pin:
+    name: "Lock Code Slot 1 PIN"
     mode: password
     min: 4
     max: 10
     pattern: "[0-9]*"
     icon: mdi:form-textbox-password
-  lock_code_slot_{{ i }}_name:
-    name: "Lock Code Slot {{ i }} Name"
+  lock_code_slot_1_name:
+    name: "Lock Code Slot 1 Name"
     icon: mdi:account
-{% endfor %}
+
+  lock_code_slot_2_pin:
+    name: "Lock Code Slot 2 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_2_name:
+    name: "Lock Code Slot 2 Name"
+    icon: mdi:account
+
+  lock_code_slot_3_pin:
+    name: "Lock Code Slot 3 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_3_name:
+    name: "Lock Code Slot 3 Name"
+    icon: mdi:account
+
+  lock_code_slot_4_pin:
+    name: "Lock Code Slot 4 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_4_name:
+    name: "Lock Code Slot 4 Name"
+    icon: mdi:account
+
+  lock_code_slot_5_pin:
+    name: "Lock Code Slot 5 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_5_name:
+    name: "Lock Code Slot 5 Name"
+    icon: mdi:account
+
+  lock_code_slot_6_pin:
+    name: "Lock Code Slot 6 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_6_name:
+    name: "Lock Code Slot 6 Name"
+    icon: mdi:account
+
+  lock_code_slot_7_pin:
+    name: "Lock Code Slot 7 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_7_name:
+    name: "Lock Code Slot 7 Name"
+    icon: mdi:account
+
+  lock_code_slot_8_pin:
+    name: "Lock Code Slot 8 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_8_name:
+    name: "Lock Code Slot 8 Name"
+    icon: mdi:account
+
+  lock_code_slot_9_pin:
+    name: "Lock Code Slot 9 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_9_name:
+    name: "Lock Code Slot 9 Name"
+    icon: mdi:account
+
+  lock_code_slot_10_pin:
+    name: "Lock Code Slot 10 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_10_name:
+    name: "Lock Code Slot 10 Name"
+    icon: mdi:account
+
+  lock_code_slot_11_pin:
+    name: "Lock Code Slot 11 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_11_name:
+    name: "Lock Code Slot 11 Name"
+    icon: mdi:account
+
+  lock_code_slot_12_pin:
+    name: "Lock Code Slot 12 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_12_name:
+    name: "Lock Code Slot 12 Name"
+    icon: mdi:account
+
+  lock_code_slot_13_pin:
+    name: "Lock Code Slot 13 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_13_name:
+    name: "Lock Code Slot 13 Name"
+    icon: mdi:account
+
+  lock_code_slot_14_pin:
+    name: "Lock Code Slot 14 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_14_name:
+    name: "Lock Code Slot 14 Name"
+    icon: mdi:account
+
+  lock_code_slot_15_pin:
+    name: "Lock Code Slot 15 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_15_name:
+    name: "Lock Code Slot 15 Name"
+    icon: mdi:account
+
+  lock_code_slot_16_pin:
+    name: "Lock Code Slot 16 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_16_name:
+    name: "Lock Code Slot 16 Name"
+    icon: mdi:account
+
+  lock_code_slot_17_pin:
+    name: "Lock Code Slot 17 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_17_name:
+    name: "Lock Code Slot 17 Name"
+    icon: mdi:account
+
+  lock_code_slot_18_pin:
+    name: "Lock Code Slot 18 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_18_name:
+    name: "Lock Code Slot 18 Name"
+    icon: mdi:account
+
+  lock_code_slot_19_pin:
+    name: "Lock Code Slot 19 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_19_name:
+    name: "Lock Code Slot 19 Name"
+    icon: mdi:account
+
+  lock_code_slot_20_pin:
+    name: "Lock Code Slot 20 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_20_name:
+    name: "Lock Code Slot 20 Name"
+    icon: mdi:account
+
+  lock_code_slot_21_pin:
+    name: "Lock Code Slot 21 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_21_name:
+    name: "Lock Code Slot 21 Name"
+    icon: mdi:account
+
+  lock_code_slot_22_pin:
+    name: "Lock Code Slot 22 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_22_name:
+    name: "Lock Code Slot 22 Name"
+    icon: mdi:account
+
+  lock_code_slot_23_pin:
+    name: "Lock Code Slot 23 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_23_name:
+    name: "Lock Code Slot 23 Name"
+    icon: mdi:account
+
+  lock_code_slot_24_pin:
+    name: "Lock Code Slot 24 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_24_name:
+    name: "Lock Code Slot 24 Name"
+    icon: mdi:account
+
+  lock_code_slot_25_pin:
+    name: "Lock Code Slot 25 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_25_name:
+    name: "Lock Code Slot 25 Name"
+    icon: mdi:account
+
+  lock_code_slot_26_pin:
+    name: "Lock Code Slot 26 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_26_name:
+    name: "Lock Code Slot 26 Name"
+    icon: mdi:account
+
+  lock_code_slot_27_pin:
+    name: "Lock Code Slot 27 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_27_name:
+    name: "Lock Code Slot 27 Name"
+    icon: mdi:account
+
+  lock_code_slot_28_pin:
+    name: "Lock Code Slot 28 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_28_name:
+    name: "Lock Code Slot 28 Name"
+    icon: mdi:account
+
+  lock_code_slot_29_pin:
+    name: "Lock Code Slot 29 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_29_name:
+    name: "Lock Code Slot 29 Name"
+    icon: mdi:account
+
+  lock_code_slot_30_pin:
+    name: "Lock Code Slot 30 PIN"
+    mode: password
+    min: 4
+    max: 10
+    pattern: "[0-9]*"
+    icon: mdi:form-textbox-password
+  lock_code_slot_30_name:
+    name: "Lock Code Slot 30 Name"
+    icon: mdi:account
