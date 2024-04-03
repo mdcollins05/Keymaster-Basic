@@ -26,30 +26,120 @@ automation:
     description: Set Key Codes on Locks
     trigger:
       - platform: state
-        entity_id: >
-          {% set prefix = 'input_text.lock_code_slot_' %}
-          {% set suffixes = range(1, 31) %}
-          {% set entity_ids = suffixes | map('string', prefix ~ '_pin') | list %}
-          {{ entity_ids }}
+        entity_id: 
+          # Generated with 
+          # {% for i in range(1, 31) %}
+          # - input_text.lock_code_slot_{{ i }}_pin
+          # {%- endfor %}
+          - input_text.lock_code_slot_1_pin
+          - input_text.lock_code_slot_2_pin
+          - input_text.lock_code_slot_3_pin
+          - input_text.lock_code_slot_4_pin
+          - input_text.lock_code_slot_5_pin
+          - input_text.lock_code_slot_6_pin
+          - input_text.lock_code_slot_7_pin
+          - input_text.lock_code_slot_8_pin
+          - input_text.lock_code_slot_9_pin
+          - input_text.lock_code_slot_10_pin
+          - input_text.lock_code_slot_11_pin
+          - input_text.lock_code_slot_12_pin
+          - input_text.lock_code_slot_13_pin
+          - input_text.lock_code_slot_14_pin
+          - input_text.lock_code_slot_15_pin
+          - input_text.lock_code_slot_16_pin
+          - input_text.lock_code_slot_17_pin
+          - input_text.lock_code_slot_18_pin
+          - input_text.lock_code_slot_19_pin
+          - input_text.lock_code_slot_20_pin
+          - input_text.lock_code_slot_21_pin
+          - input_text.lock_code_slot_22_pin
+          - input_text.lock_code_slot_23_pin
+          - input_text.lock_code_slot_24_pin
+          - input_text.lock_code_slot_25_pin
+          - input_text.lock_code_slot_26_pin
+          - input_text.lock_code_slot_27_pin
+          - input_text.lock_code_slot_28_pin
+          - input_text.lock_code_slot_29_pin
+          - input_text.lock_code_slot_30_pin
         for:
           hours: 0
           minutes: 0
           seconds: 5
         id: PIN
       - platform: state
-        entity_id: >
-          {% set prefix = 'input_boolean.lock_code_slot_' %}
-          {% set suffixes = range(1, 31) %}
-          {% set entity_ids = suffixes | map('string', prefix ~ '_state') | list %}
-          {{ entity_ids }}
+        entity_id: 
+          # Generated with 
+          # {% for i in range(1, 31) %}
+          # - input_boolean.lock_code_slot_{{ i }}_state
+          # {%- endfor %}
+          - input_boolean.lock_code_slot_1_state
+          - input_boolean.lock_code_slot_2_state
+          - input_boolean.lock_code_slot_3_state
+          - input_boolean.lock_code_slot_4_state
+          - input_boolean.lock_code_slot_5_state
+          - input_boolean.lock_code_slot_6_state
+          - input_boolean.lock_code_slot_7_state
+          - input_boolean.lock_code_slot_8_state
+          - input_boolean.lock_code_slot_9_state
+          - input_boolean.lock_code_slot_10_state
+          - input_boolean.lock_code_slot_11_state
+          - input_boolean.lock_code_slot_12_state
+          - input_boolean.lock_code_slot_13_state
+          - input_boolean.lock_code_slot_14_state
+          - input_boolean.lock_code_slot_15_state
+          - input_boolean.lock_code_slot_16_state
+          - input_boolean.lock_code_slot_17_state
+          - input_boolean.lock_code_slot_18_state
+          - input_boolean.lock_code_slot_19_state
+          - input_boolean.lock_code_slot_20_state
+          - input_boolean.lock_code_slot_21_state
+          - input_boolean.lock_code_slot_22_state
+          - input_boolean.lock_code_slot_23_state
+          - input_boolean.lock_code_slot_24_state
+          - input_boolean.lock_code_slot_25_state
+          - input_boolean.lock_code_slot_26_state
+          - input_boolean.lock_code_slot_27_state
+          - input_boolean.lock_code_slot_28_state
+          - input_boolean.lock_code_slot_29_state
+          - input_boolean.lock_code_slot_30_state
         id: Disable
         to: "off"
       - platform: state
-        entity_id: >
-          {% set prefix = 'input_boolean.lock_code_slot_' %}
-          {% set suffixes = range(1, 31) %}
-          {% set entity_ids = suffixes | map('string', prefix ~ '_state') | list %}
-          {{ entity_ids }}
+        entity_id: 
+          # Generated with 
+          # {% for i in range(1, 31) %}
+          # - input_boolean.lock_code_slot_{{ i }}_state
+          # {%- endfor %}
+          - input_boolean.lock_code_slot_1_state
+          - input_boolean.lock_code_slot_2_state
+          - input_boolean.lock_code_slot_3_state
+          - input_boolean.lock_code_slot_4_state
+          - input_boolean.lock_code_slot_5_state
+          - input_boolean.lock_code_slot_6_state
+          - input_boolean.lock_code_slot_7_state
+          - input_boolean.lock_code_slot_8_state
+          - input_boolean.lock_code_slot_9_state
+          - input_boolean.lock_code_slot_10_state
+          - input_boolean.lock_code_slot_11_state
+          - input_boolean.lock_code_slot_12_state
+          - input_boolean.lock_code_slot_13_state
+          - input_boolean.lock_code_slot_14_state
+          - input_boolean.lock_code_slot_15_state
+          - input_boolean.lock_code_slot_16_state
+          - input_boolean.lock_code_slot_17_state
+          - input_boolean.lock_code_slot_18_state
+          - input_boolean.lock_code_slot_19_state
+          - input_boolean.lock_code_slot_20_state
+          - input_boolean.lock_code_slot_21_state
+          - input_boolean.lock_code_slot_22_state
+          - input_boolean.lock_code_slot_23_state
+          - input_boolean.lock_code_slot_24_state
+          - input_boolean.lock_code_slot_25_state
+          - input_boolean.lock_code_slot_26_state
+          - input_boolean.lock_code_slot_27_state
+          - input_boolean.lock_code_slot_28_state
+          - input_boolean.lock_code_slot_29_state
+          - input_boolean.lock_code_slot_30_state
         id: PIN
         to: "on"
     condition: []
